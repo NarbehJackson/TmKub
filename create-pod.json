@@ -1,0 +1,19 @@
+{
+  "kind": "Pod",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "miner",
+    "labels": {
+      "name": "miner",
+      "role": "miner"
+    }
+  },
+  "spec": {    
+    "containers": [
+      {
+        "name": "miner",
+        "image": "wernight/bfgminer"        
+      }
+    ]
+  }
+}

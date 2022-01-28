@@ -1,0 +1,4 @@
+flask
+pycrypto
+flask_sqlalchemy
+pymysql
