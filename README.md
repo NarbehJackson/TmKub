@@ -5,9 +5,16 @@ curl -sfL https://get.k3s.io | sh -
 
 sudo kubectl get nodes
 
+
 sudo kubectl apply -f template-injection-manifest.yml
 
 sudo watch kubectl get pods
+
+sudo kubectl get pods -o wide
+
+sudo kubectl describe pods
+
+sudo kubectl exec -ti mysql-db-568f6858f7-z5kkw -- bin/bash
 
 http GET http://localhost:32345/not-found?page={{4*4}}
 
